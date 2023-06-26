@@ -1,12 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import Layout from '../components/layout'
+
 
 export default function Home() {
   return (
     <>
-      <h1>HOLA MUNDO</h1>
-      <a href='/nosotros'>Nosotros</a>
+      <Layout
+        title= {'Inicio'}
+        description = {'Blog de musica, venta de guitarra y mas'}
+      >
+        <h1>HOLA MUNDO</h1>
+        <Link href='/nosotros'>Nosotros</Link>
+      </Layout>
+      
     </>
   )
 }
