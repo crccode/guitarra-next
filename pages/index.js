@@ -9,7 +9,7 @@ export default function Home() {
         title= {'Inicio'}
         description = {'Blog de musica, venta de guitarra y mas'}
       >
-        <h1>HOLA MUNDO</h1>
+        <h1>INICIO</h1>
         <Link href='/nosotros'>Nosotros</Link>
       </Layout>
       

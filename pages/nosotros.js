@@ -8,7 +8,7 @@ export default function Nosotros() {
             title='Nosotros'
             description='Sobre nosotros, tienda de musica '
         >
-            <h1>INICIO</h1>
+            <h1>NOSOTROS</h1>
             <Link href='/'>Nosotros</Link>
         </Layout>
       
