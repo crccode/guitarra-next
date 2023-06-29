@@ -3,10 +3,12 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/header.module.css";
 export default function Header() {
+  // LO USAREMOS PARA GET NAME PATH
   const router = useRouter();
 
   return (
     <header className={styles.header}>
+    {/* class contenedor CENTRA EL CONTENIDO */}
       <div className={`contenedor ${styles.barra}`}>
         <Link legacyBehavior href={"/"}>
           <a>
