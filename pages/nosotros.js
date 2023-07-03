@@ -8,7 +8,7 @@ export default function Nosotros() {
       title={"Nosotros"}
       description="Sobre nosotros, guitarLA, tienda de música"
     >
-    {/* ESTAS DOS CLASES EXISTE EN LA HOJA DE ESTILO GLOBAL */}
+      {/* ESTAS DOS CLASES EXISTE EN LA HOJA DE ESTILO GLOBAL */}
       <main className="contenedor">
         <h1 className="heading">Nosotros</h1>
 
@@ -44,3 +44,5 @@ export default function Nosotros() {
     </Layout>
   );
 }
+
+
