@@ -1,16 +1,36 @@
+import Layout from "../components/layout"
+import Post from "../components/post"
+import styles from '../styles/grid.module.css'
 
-import Layout from "../components/layout";
-
-export default function Blog() {
+export default function Blog({posts}) {
+  // IMPRIMIMOS LOS POST
+  //console.log(posts)
   return (
-    <div>
-        <Layout
-            title='Blog'
-            description='Blog de musica, venta de guitarra, consejos '
-        >
-            <h1>BLOG</h1>
-        </Layout>
-      
-    </div>
+    <Layout
+      title={'Blog'}
+      description="Blog de música, venta de guitarras, consejos, GuitarLA"
+    >
+        <main className="contenedor">
+            <h1 className="heading">Blog</h1>
+            <div className={styles.grid}>
+                {posts?.map(post => (
+                    <Post
+                      key={post.id}
+                      post={post.attributes}
+                    />
+                ))}
+            </div>
+        </main>
+    </Layout>
   )
+}
+
+ export async function getStaticProps() {
+    const respuesta = await fetch(`${process.env.API_URL}/posts?populate=imagen`)
+    const {data: posts} = await respuesta.json() 
+    return {
+      props: {
+        posts
+      }
+    }
 }
