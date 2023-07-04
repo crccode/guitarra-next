@@ -2,6 +2,7 @@ import Image from "next/image"
 import styles from '../../styles/guitarras.module.css'
 import Layout from "../../components/layout"
 
+// EL COMPONENTE GUITARRA LO LLAMA 
 export default function Producto({guitarra}) {
 
     const { nombre, descripcion, imagen, precio } = guitarra[0].attributes

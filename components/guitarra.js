@@ -13,6 +13,7 @@ export default function Guitarra({guitarra}) {
             <h3>{nombre}</h3>
             <p className={styles.descripcion}>{descripcion}</p>
             <p className={styles.precio}>${precio}</p>
+            {/* DEBE LLEVAR EL MISMO NOMBRE CREAR CARPETA guitarras Y UN ARCHIVO url */}
             <Link legacyBehavior href={`/guitarras/${url}`}>
               <a className={styles.enlace}>
                 Ver Producto

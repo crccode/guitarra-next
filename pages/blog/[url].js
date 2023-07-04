@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import { formatearFecha } from '../../utils/helpers'
 import styles from '../../styles/blog.module.css'
 
+// EL COMPONENTE POST LO LLAMA 
 export default function Post({post}) {
     const { titulo,contenido, imagen, publishedAt } = post[0].attributes
 

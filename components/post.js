@@ -18,6 +18,7 @@ export default function Post({post}) {
             <h3>{titulo}</h3>
             <p className={styles.fecha}>{formatearFecha(publishedAt)}</p>
             <p className={styles.resumen}>{contenido}</p>
+            {/* DEBE LLEVAR EL MISMO NOMBRE CREAR CARPETA blog Y UN ARCHIVO url */}
             <Link legacyBehavior href={`/blog/${url}`}>
                 <a className={styles.enlace}>
                     Leer Post
